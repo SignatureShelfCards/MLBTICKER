@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Team Ticker with Logos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff00;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .ticker-container {
+            width: 350px;
+            height: 300px;
+            overflow: hidden;
+            border: 2px solid #33333300;
+            background: #ffffff00;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+            position: relative;
+        }
+
+        .ticker {
+            display: flex;
+            flex-direction: column;
+            animation: scroll-vertical 75s linear infinite;
+        }
+
+        .ticker-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .ticker-item img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        @keyframes scroll-vertical {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker-container">
+        <div class="ticker">
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Arizona_Diamondbacks_logo_teal.svg/118px-Arizona_Diamondbacks_logo_teal.svg.png">
+                Arizona Diamondbacks
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Atlanta_Braves_Insignia.svg/107px-Atlanta_Braves_Insignia.svg.png">
+                Atlanta Braves
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Baltimore_Orioles_cap.svg/105px-Baltimore_Orioles_cap.svg.png">
+                Baltimore Orioles
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/RedSoxPrimary_HangingSocks.svg/102px-RedSoxPrimary_HangingSocks.svg.png">
+                Boston Red Sox
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Chicago_Cubs_logo.svg">
+                Chicago Cubs
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chicago_White_Sox.svg/72px-Chicago_White_Sox.svg.png">
+                Chicago White Sox
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Cincinnati_Reds_Logo.svg">
+                Cincinnati Reds
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Guardians_winged_%22G%22.svg/119px-Guardians_winged_%22G%22.svg.png">
+                Cleveland Guardians
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Colorado_Rockies_Cap_Insignia.svg/100px-Colorado_Rockies_Cap_Insignia.svg.png">
+                Colorado Rockies
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Detroit_Tigers_logo.svg/69px-Detroit_Tigers_logo.svg.png">
+                Detroit Tigers
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Houston-Astros-Logo.svg/100px-Houston-Astros-Logo.svg.png">
+                Houston Astros
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Kansas_City_Royals_Primary_Logo.svg/64px-Kansas_City_Royals_Primary_Logo.svg.png">
+                Kansas City Royals
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Los_Angeles_Angels_of_Anaheim.svg/75px-Los_Angeles_Angels_of_Anaheim.svg.png">
+                Los Angeles Angels
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Los_Angeles_Dodgers_Logo.svg/96px-Los_Angeles_Dodgers_Logo.svg.png">
+                Los Angeles Dodgers
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Marlins_team_logo.svg/103px-Marlins_team_logo.svg.png">
+                Miami Marlins
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Milwaukee_Brewers_logo.svg/100px-Milwaukee_Brewers_logo.svg.png">
+                Milwaukee Brewers
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Minnesota_Twins_Insignia.svg/100px-Minnesota_Twins_Insignia.svg.png">
+                Minnesota Twins
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/New_York_Yankees_Primary_Logo.svg/90px-New_York_Yankees_Primary_Logo.svg.png">
+                New York Yankees
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/New_York_Mets.svg/100px-New_York_Mets.svg.png">
+                New York Mets
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Oakland_A%27s_logo.svg/100px-Oakland_A%27s_logo.svg.png">
+                Oakland Athletics
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Philadelphia_Phillies_%282019%29_logo.svg/113px-Philadelphia_Phillies_%282019%29_logo.svg.png">
+                Philadelphia Phillies
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pittsburgh_Pirates_logo_2014.svg/71px-Pittsburgh_Pirates_logo_2014.svg.png">
+                Pittsburgh Pirates
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/San_Diego_Padres_%282020%29_cap_logo.svg/100px-San_Diego_Padres_%282020%29_cap_logo.svg.png">
+                San Diego Padres
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/San_Francisco_Giants_Logo.svg/175px-San_Francisco_Giants_Logo.svg.png">
+                San Francisco Giants
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Seattle_Mariners_logo_%28low_res%29.svg/100px-Seattle_Mariners_logo_%28low_res%29.svg.png">
+                Seattle Mariners
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/St._Louis_Cardinals_logo.svg/105px-St._Louis_Cardinals_logo.svg.png">
+                St. Louis Cardinals
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tampa_Bay_Rays_cap_logo.svg/107px-Tampa_Bay_Rays_cap_logo.svg.png">
+                Tampa Bay Rays
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Texas_Rangers.svg/100px-Texas_Rangers.svg.png">
+                Texas Rangers
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Toronto_Blue_Jay_Primary_Logo.svg/116px-Toronto_Blue_Jay_Primary_Logo.svg.png">
+                Toronto Blue Jays
+            </div>
+            <div class="ticker-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Washington_Nationals_logo.svg/100px-Washington_Nationals_logo.svg.png">
+                Washington Nationals
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to dynamically loop the ticker content
+        const ticker = document.querySelector('.ticker');
+        const clone = ticker.innerHTML;
+
+        ticker.innerHTML += clone; // Duplicate the content to allow smooth looping
+    </script>
+</body>
+</html>
